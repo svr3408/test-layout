@@ -1,0 +1,59 @@
+.card {
+  border: 1px solid #dcdcdc;
+  background-color: white;
+  background-color: #fff;
+  box-shadow: none;
+  transition: box-shadow 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0 5px 10px hsla(236, 15%, 20%, 0.2);
+}
+
+.card__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card__description {
+  padding: 0 15px 15px 15px;
+}
+
+.card__title {
+  overflow: hidden;
+  height: 75px;
+  font-weight: 500;
+  position: relative;
+}
+
+.card__title::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 55px;
+  height: 25px;
+  padding-left: 10px;
+  content: "";
+  background-image: linear-gradient(to right, transparent, #fff 50%);
+}
+
+.card__username,
+.card__usercount {
+  color: #969696;
+}
+.card__price {
+  color: #539048;
+  float: right;
+  font-weight: 700;
+}
+.card__stars {
+  color: #fdb439;
+  float: right;
+}
+
+.card__title,
+.card__username,
+.card__like {
+  cursor: pointer;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <h1>Список карточек</h1>
+    <div class="grid">
+      <div class="grid__col col-xs-6 col-md-4 col-lg-1/5">
+        @@include('./html/card.html')
+      </div>
+
+      <div class="grid__col col-xs-6 col-md-4 col-lg-1/5">
+        @@include('./html/card.html')
+      </div>
+
+      <div class="grid__col col-xs-6 col-md-4 col-lg-1/5">
+        @@include('./html/card.html')
+      </div>
+
+      <div class="grid__col col-xs-6 col-md-4 col-lg-1/5">
+        @@include('./html/card.html')
+      </div>
+
+      <div class="grid__col col-xs-6 col-md-4 col-lg-1/5">
+        @@include('./html/card.html')
+      </div>
+
+      <div class="grid__col col-xs-6 col-md-4 col-lg-1/5">
+        @@include('./html/card.html')
+      </div>
+
+      <div class="grid__col col-xs-6 col-md-4 col-lg-1/5">
+        @@include('./html/card.html')
+      </div>
+
+      <div class="grid__col col-xs-6 col-md-4 col-lg-1/5">
+        @@include('./html/card.html')
+      </div>
+    </div>
+
+    <h1>Слайдер карточек</h1>
+    <div class="carousel">
+      <div style="overflow: hidden;">
+        <div class="carousel__items grid">
+          <div class="carousel__item grid__col col-xs-12 col-md-4 col-lg-1/5">
+            @@include('./html/card.html')
+          </div>
+
+          <div class="carousel__item grid__col col-xs-12 col-md-4 col-lg-1/5">
+            @@include('./html/card.html')
+          </div>
+
+          <div class="carousel__item grid__col col-xs-12 col-md-4 col-lg-1/5">
+            @@include('./html/card.html')
+          </div>
+
+          <div class="carousel__item grid__col col-xs-12 col-md-4 col-lg-1/5">
+            @@include('./html/card.html')
+          </div>
+
+          <div class="carousel__item grid__col col-xs-12 col-md-4 col-lg-1/5">
+            @@include('./html/card.html')
+          </div>
+        </div>
+      </div>
+      <div class="carousel__buttons">
+        <button class="carousel__prevBtn">
+          <img
+            src="images/angle-left-light.svg"
+            alt="star"
+            height="70"
+            width="25"
+          />
+        </button>
+        <button class="carousel__nextBtn">
+          <img
+            src="images/angle-right-light.svg"
+            alt="star"
+            height="70"
+            width="25"
+          />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
